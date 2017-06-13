@@ -66,3 +66,12 @@ Please select an option:
 
         if selection == 'exit':
             Phonebook.exit()
+
+db = sqlite3.connect('ENTER DIRECTORY AND FILENAME HERE. ex. c:/users/myaccount/myfirstDB.sqlite')
+c = db.cursor()
+
+Phonebook()
+while True:
+    MainMenu()
+
+db.close()
